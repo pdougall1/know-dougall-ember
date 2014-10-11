@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KnowDougall</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/know-dougall.css">
+  </head>
+  <body>
+    <script>
+      window.KnowDougallENV = {{ENV}};
+      window.EmberENV = window.KnowDougallENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/know-dougall.js"></script>
+    <script>
+      window.KnowDougall = require('know-dougall/app')['default'].create(KnowDougallENV.APP);
+    </script>
+  </body>
+</html>

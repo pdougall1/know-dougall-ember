@@ -1,0 +1,23 @@
+@import 'variables';
+
+.nav-button {
+	color: $orange;
+	background: $light-background;
+	&.hovering {
+		color: $dark-red;
+		background: $light-gray;
+	}
+}
+
+.left-nav {
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	font-size: 30px;
+}
+
+.right-nav {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+}

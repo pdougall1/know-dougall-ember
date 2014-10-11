@@ -1,0 +1,16 @@
+<div class='title'>
+	{{hoverable-element 
+	  content=post.title
+	  enter='showPostDetails'
+	  leave='hidePostDetails'
+	 }}
+</div>
+
+<div class='post-details'>
+	<div class='topic'>{{post.topic}}</div>
+	<div class='date'>{{time-formatter time=post.createdAt}}</div>
+</div>
+
+
+<div class='summary'>{{post.summary}}</div>
+{{input type="checkbox" name="viewable" checked=viewable}}

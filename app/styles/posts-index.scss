@@ -1,0 +1,30 @@
+ul.posts-list {
+	li {
+		clear: both;
+		margin-top: 60px;
+		margin-bottom: 60px;	
+		.title {
+			font-size: 40px;
+			font-weight: bold;
+		}
+		.topic {
+			font-size: 14px;
+		}
+		.date {
+			font-size: 14px;
+		}
+		.summary {
+			font-size: 16px;
+			clear: both;		
+		}
+	}
+}
+
+.post-details {
+	div:first-of-type {
+		float: left;
+	}
+	div:last-of-type {
+		float: right;
+	}
+}

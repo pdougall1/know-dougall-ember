@@ -1,0 +1,14 @@
+<label>Title</label>
+{{input type='text' value=title}}
+
+<label>Topic</label>
+{{input type='text' value=topic}}
+
+<label>Summary</label>
+{{textarea type='text' value=summary}}
+
+<label>Entry</label>
+{{textarea type='text' value=entry}}
+
+
+<button {{action 'submitPost' model}}>Submit</button>
