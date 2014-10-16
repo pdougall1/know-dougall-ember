@@ -27,7 +27,6 @@
     "express": "^4.1.1",
     "glob": "^3.2.9",
     "originate": "0.1.5",
-    "broccoli-sass": "^0.2.2",
-    "baconjs": "^0.7.23"
+    "broccoli-sass": "^0.2.3"
   }
 }

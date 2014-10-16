@@ -1,5 +1,6 @@
 @import 'variables';
 
+
 // 
 // FOUNDATION SETTINGS
 //
@@ -39,7 +40,7 @@ $column-gutter: rem-calc(0);
 // We use these to control various global styles
 $body-bg: $light;
 $body-font-color: $black;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -53,7 +54,7 @@ $body-font-color: $black;
 
 // We use these as default colors throughout
 $primary-color: $orange;
-$secondary-color: $light-blue;
+$secondary-color: $dark-red;
 $alert-color: $red;
 $success-color: $green;
 
@@ -993,3 +994,8 @@ $table-border-size: 0;
 // $topbar-sticky-class: ".sticky";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 @import 'foundation';
+
+
+
+
+
