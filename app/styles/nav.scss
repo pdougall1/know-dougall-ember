@@ -21,3 +21,77 @@
 	right: 20px;
 	top: 20px;
 }
+
+.copyable {
+	background-image: url(/assets/images/clipboard.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.copyable-text {
+	height: 30px;
+	width: 30px;
+	-webkit-transition: background-color 200ms;
+    transition: background-color 200ms;
+	&.zeroclipboard-is-hover {
+		background-color: darken(white, 10%);
+		cursor: pointer;
+	}
+	&.just-coppied {
+		-webkit-transition: background-color 200ms;
+	    transition: background-color 200ms;
+		background-color: lighten($success, 20%);
+	}
+}
+
+.menu {
+	position: fixed;
+	top: 220px;
+	left: 95px;
+	height: 60px;
+	width: 60px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	&.close {
+		background-image: url(/assets/images/menu_close.svg);
+		z-index: 10;
+	    -webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	    transition: opacity 1s ease-in-out;
+	}
+	&.one {
+		background-image: url(/assets/images/menu-1.svg);
+		z-index: 11;
+	    -webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	    transition: opacity 1s ease-in-out;
+	}
+	&.two {
+		background-image: url(/assets/images/menu-2.svg);
+		z-index: 12;
+	    -webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	    transition: opacity 1s ease-in-out;
+	}
+	&.three {
+		background-image: url(/assets/images/menu-3.svg);
+		z-index: 13;
+	    -webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	    transition: opacity 1s ease-in-out;
+	}
+	&.full {
+		background-image: url(/assets/images/menu_full.svg);
+		z-index: 14;
+	    -webkit-transition: opacity 1s ease-in-out;
+	    -moz-transition: opacity 1s ease-in-out;
+	    -o-transition: opacity 1s ease-in-out;
+	    transition: opacity 1s ease-in-out;
+	}
+}
+
+
