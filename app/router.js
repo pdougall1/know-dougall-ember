@@ -18,7 +18,9 @@ Router.map(function() {
     this.route('ember');
     this.route('data');
   });
-
+  this.resource('friends-graph', function () {
+    this.route('show', { path: '/:linkedin_id' });
+  });
 });
 
 export default Router;
