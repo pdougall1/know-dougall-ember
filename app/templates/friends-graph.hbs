@@ -1,7 +1,22 @@
 {{linkedin-login}}
 
+{{outlet}}
+
 {{friends-graph 
   user=content 
   connections=content.connectedUsers
   selectedConnectionChanged='setChosenConnection'
 }}
+<div class='friends-graph-sidebar'>
+{{#with connectionBeingViewed}}
+	<img {{bind-attr src=pictureUrl}}>
+	<ul>
+		<li>{{firstName}} {{lastName}}</li>
+		<li>{{headline}}</li>
+		<li>{{industry}}</li>
+		{{#if numConnections}}
+			<li>{{numConnections}} connections</li>
+		{{/if}}
+	</ul>
+{{/with}}
+</div>

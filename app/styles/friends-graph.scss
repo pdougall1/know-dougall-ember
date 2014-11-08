@@ -9,3 +9,19 @@
     right:20%;
     overflow:hidden;
 }
+
+.friends-graph-sidebar {
+	border-left: solid $dark 1px;
+	position:absolute;
+    top:0;
+    bottom:0;
+    left: 80%;
+    right: 0;
+	width: 20%;
+	background-color: $black;
+	color: $gray;
+	overflow:hidden;
+	img {
+		width: 100%;
+	}
+}

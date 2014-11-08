@@ -5,4 +5,10 @@ export default Ember.Route.extend({
 		return this.store.find('user', 1)
 	},
 
+	actions: {
+		setChosenConnection: function (connection) {
+			this.get('controller').set('chosenConnection', connection);
+		}
+	}
+
 });
