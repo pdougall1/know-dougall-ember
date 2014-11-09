@@ -21,6 +21,8 @@ Router.map(function() {
   this.resource('friends-graph', function () {
     this.route('show', { path: '/:linkedin_id' });
   });
+
+  this.route('application');
 });
 
 export default Router;

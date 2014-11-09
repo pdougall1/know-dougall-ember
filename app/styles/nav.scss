@@ -23,3 +23,78 @@
 	top: 20px;
 	z-index: 10;
 }
+
+.copyable {
+	background-image: url(/assets/images/clipboard.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.copyable-text {
+	height: 30px;
+	width: 30px;
+	-webkit-transition: background-color 200ms;
+    transition: background-color 200ms;
+	&.zeroclipboard-is-hover {
+		background-color: darken(white, 10%);
+		cursor: pointer;
+	}
+	&.just-coppied {
+		-webkit-transition: background-color 200ms;
+	    transition: background-color 200ms;
+		background-color: lighten($success, 20%);
+	}
+}
+
+$speed: 100ms;
+
+.menu-container {
+	.menu {
+		position: fixed;
+		top: 220px;
+		left: 95px;
+		height: 60px;
+		width: 60px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	    -webkit-transition: opacity $speed ease-in-out;
+	    -moz-transition: opacity $speed ease-in-out;
+	    -o-transition: opacity $speed ease-in-out;
+	    transition: opacity $speed ease-in-out;
+	    opacity: 1;
+		&.hidden {
+			opacity: 0;
+		}
+		&.close {
+			background-image: url(/assets/images/menu_close.svg);
+			z-index: 11;
+		}
+		&.three {
+			background-image: url(/assets/images/menu-3.svg);
+			z-index: 10;
+		}
+		&.full {
+			background-image: url(/assets/images/menu_full.svg);
+			z-index: 12;
+		}
+	}
+}
+
+.nav-menu {
+	position: fixed;
+	margin: 20px;
+	margin-left: 50px;
+	left: -1000px;
+	top: 300px;
+    -webkit-transition: left $speed ease-in-out;
+    -moz-transition: left $speed ease-in-out;
+    -o-transition: left $speed ease-in-out;
+    transition: left $speed ease-in-out;
+    li {
+    	font-size: 20px;
+    }
+	&.shown {
+		left: 0px;
+	}
+}
+>>>>>>> add-navegation

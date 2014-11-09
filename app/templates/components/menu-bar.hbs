@@ -1,0 +1,17 @@
+<div class='menu-container'>
+	<div class='menu full'></div>
+	<div class='menu three'></div>
+	<div class='menu close hidden'></div>
+</div>
+
+<div class='nav-menu'>
+	<ul>
+	{{#each link in links}}
+		{{#if link.model}}
+			<li>{{#link-to link.route link.model}}{{link.name}}{{/link-to}}</li>
+		{{else}}
+			<li>{{#link-to link.route}}{{link.name}}{{/link-to}}</li>
+		{{/if}}
+	{{/each}}
+	</ul>
+</div>
