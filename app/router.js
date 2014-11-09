@@ -19,6 +19,7 @@ Router.map(function() {
     this.route('data');
   });
 
+  this.route('application');
 });
 
 export default Router;

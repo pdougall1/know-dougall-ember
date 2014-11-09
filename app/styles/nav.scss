@@ -44,54 +44,54 @@
 	}
 }
 
-.menu {
-	position: fixed;
-	top: 220px;
-	left: 95px;
-	height: 60px;
-	width: 60px;
-	background-size: 100% 100%;
-	background-repeat: no-repeat;
-	&.close {
-		background-image: url(/assets/images/menu_close.svg);
-		z-index: 10;
-	    -webkit-transition: opacity 1s ease-in-out;
-	    -moz-transition: opacity 1s ease-in-out;
-	    -o-transition: opacity 1s ease-in-out;
-	    transition: opacity 1s ease-in-out;
-	}
-	&.one {
-		background-image: url(/assets/images/menu-1.svg);
-		z-index: 11;
-	    -webkit-transition: opacity 1s ease-in-out;
-	    -moz-transition: opacity 1s ease-in-out;
-	    -o-transition: opacity 1s ease-in-out;
-	    transition: opacity 1s ease-in-out;
-	}
-	&.two {
-		background-image: url(/assets/images/menu-2.svg);
-		z-index: 12;
-	    -webkit-transition: opacity 1s ease-in-out;
-	    -moz-transition: opacity 1s ease-in-out;
-	    -o-transition: opacity 1s ease-in-out;
-	    transition: opacity 1s ease-in-out;
-	}
-	&.three {
-		background-image: url(/assets/images/menu-3.svg);
-		z-index: 13;
-	    -webkit-transition: opacity 1s ease-in-out;
-	    -moz-transition: opacity 1s ease-in-out;
-	    -o-transition: opacity 1s ease-in-out;
-	    transition: opacity 1s ease-in-out;
-	}
-	&.full {
-		background-image: url(/assets/images/menu_full.svg);
-		z-index: 14;
-	    -webkit-transition: opacity 1s ease-in-out;
-	    -moz-transition: opacity 1s ease-in-out;
-	    -o-transition: opacity 1s ease-in-out;
-	    transition: opacity 1s ease-in-out;
+$speed: 100ms;
+
+.menu-container {
+	.menu {
+		position: fixed;
+		top: 220px;
+		left: 95px;
+		height: 60px;
+		width: 60px;
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+	    -webkit-transition: opacity $speed ease-in-out;
+	    -moz-transition: opacity $speed ease-in-out;
+	    -o-transition: opacity $speed ease-in-out;
+	    transition: opacity $speed ease-in-out;
+	    opacity: 1;
+		&.hidden {
+			opacity: 0;
+		}
+		&.close {
+			background-image: url(/assets/images/menu_close.svg);
+			z-index: 11;
+		}
+		&.three {
+			background-image: url(/assets/images/menu-3.svg);
+			z-index: 10;
+		}
+		&.full {
+			background-image: url(/assets/images/menu_full.svg);
+			z-index: 12;
+		}
 	}
 }
 
-
+.nav-menu {
+	position: fixed;
+	margin: 20px;
+	margin-left: 50px;
+	left: -1000px;
+	top: 300px;
+    -webkit-transition: left $speed ease-in-out;
+    -moz-transition: left $speed ease-in-out;
+    -o-transition: left $speed ease-in-out;
+    transition: left $speed ease-in-out;
+    li {
+    	font-size: 20px;
+    }
+	&.shown {
+		left: 0px;
+	}
+}
