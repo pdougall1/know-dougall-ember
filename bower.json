@@ -13,6 +13,7 @@
     "ember-qunit-notifications": "^0.0.3",
     "ember-cli-test-loader": "rjackson/ember-cli-test-loader#0.0.2",
     "moment": "~2.8.3",
-    "bacon": "0.7.24"
+    "bacon": "0.7.24",
+    "zeroclipboard": "2.1.6 "
   }
 }

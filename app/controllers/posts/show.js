@@ -6,6 +6,10 @@ export default Ember.ObjectController.extend({
 
 		return [
 			{
+				name: 'Friends Graph',
+				route: 'friends-graph.index'
+			},
+			{
 				name: 'Edit',
 				route: 'posts.edit',
 				model: this
@@ -18,6 +22,13 @@ export default Ember.ObjectController.extend({
 			}
 		]
 
-	}.property()
+	}.property(),
+
+	actions: {
+		showAnnotation: function (id) {
+			var ann = this.store.find('annotation', id);
+			this.set('currentAnnotation', ann);
+		}
+	}
 
 });

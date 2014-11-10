@@ -1,16 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	attributeBindings: ['style'],
-	style: "height:20px;" + 
-	       "width:30px;" +
-	       "background-color:blue;" +
-	       "z-index:10;" +
-	       "position: absolute;" +
-           "top: 60px;" +
-           "left: 20px;",
-
-
+	classNames: ['linkedin-login'],
 
 	// href: function () {
 	// 	_this = this

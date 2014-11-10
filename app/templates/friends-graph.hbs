@@ -7,9 +7,14 @@
   connections=content.connectedUsers
   selectedConnectionChanged='setChosenConnection'
 }}
+
 <div class='friends-graph-sidebar'>
 {{#with connectionBeingViewed}}
-	<img {{bind-attr src=pictureUrl}}>
+	{{#if largePictureUrl}}
+		<img {{bind-attr src=largePictureUrl}}>
+	{{else}}
+		<div>Hang on, we're still getting these images.</div>
+	{{/if}}
 	<ul>
 		<li>{{firstName}} {{lastName}}</li>
 		<li>{{headline}}</li>

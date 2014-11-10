@@ -7,5 +7,6 @@ export default DS.Model.extend({
 	createdAt: DS.attr('date'),
 	formattedEntry: DS.attr('string'),
 	summary: DS.attr('string'),
-	viewable: DS.attr('boolean')
+	viewable: DS.attr('boolean'),
+	annotations: DS.hasMany('annotation')
 });

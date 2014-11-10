@@ -1,14 +1,16 @@
-<label>Title</label>
-{{input type='text' value=title}}
+<form class='post-form' {{action 'submitPost' content on='submit'}} >
 
-<label>Topic</label>
-{{input type='text' value=topic}}
+	<label>Title</label>
+	{{input type='text' value=title}}
 
-<label>Summary</label>
-{{textarea type='text' value=summary}}
+	<label>Topic</label>
+	{{input type='text' value=topic}}
 
-<label>Entry</label>
-{{textarea type='text' value=entry}}
+	<label>Summary</label>
+	{{textarea type='text' value=summary class='summary'}}
 
+	<label>Entry</label>
+	{{textarea type='text' value=entry}}
 
-<button {{action 'submitPost' model}}>Submit</button>
+	<button>Submit</button>
+</form>

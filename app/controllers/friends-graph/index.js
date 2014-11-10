@@ -1,12 +1,8 @@
 import Ember from 'ember';
 
-export default Ember.ObjectController.extend({
+export default Ember.Controller.extend({
 	navLinks: function () {
 		return [
-			{
-				name: 'Friends Graph',
-				route: 'friends-graph.index'
-			},
 			{
 				name: 'New',
 				route: 'posts.new'

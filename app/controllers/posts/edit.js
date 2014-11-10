@@ -4,6 +4,10 @@ export default Ember.ObjectController.extend({
 	navLinks: function () {
 		return [
 			{
+				name: 'Friends Graph',
+				route: 'friends-graph.index'
+			},
+			{
 				name: 'New',
 				route: 'posts.new'
 			}, {

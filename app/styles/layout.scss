@@ -4,14 +4,41 @@
 	margin-right: auto;
 }
 
-.personal-logo {
-	width: 200px;
-	height: 200px;
-	margin: 10px;
-}
-
 .left-sidebar {
+	background-color: transparent !important;
+	.personal-logo {
+		width: 200px;
+		height: 200px;
+		margin: 10px;
+		z-index: 10;
+	}
 	position: fixed;
 	left: 1%;
 	width: 23%;
+	z-index: 10;
+	&.friends-graph {
+		width: 10%;
+		.menu {
+			top: 80px;
+			left: 40px;
+		}
+		.personal-logo {
+			display: none;
+		}
+		.nav-menu {
+			top: 120px;
+		}
+	}
+}
+
+.linkedin-login {
+	position: fixed;
+	top: 28px;
+	left: 52px;
+	width: 40px;
+	height: 40px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url(/assets/images/linkedin-logo.png);
+	z-index: 20;
 }

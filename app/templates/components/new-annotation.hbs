@@ -1,0 +1,8 @@
+<form class='annotation-form' {{action 'submitAnnotation' on=submit}}>
+	<title>link-name</title>
+	{{input value=annotation.name class='link-name'}}
+
+	<title>body</title>
+	{{textarea value=annotation.entry}}
+	<button type="submit">Submit</button>
+</form>
