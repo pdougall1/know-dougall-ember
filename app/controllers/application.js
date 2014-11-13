@@ -11,12 +11,13 @@ export default Ember.Controller.extend({
 	controllerSpecificProperties: ['navLinks', 'leftSidebarClass'],
 
 	setControllerSpecificProperties: function () {
-		console.log('testing');
 		var context = this
-		this.get('controllerSpecificProperties').forEach( function (prop) {
-			var val = context.getPropertyValue(prop)
-			context.set(prop, val);
-		});
+		if (this.get('currentPath') != 'home') {
+			this.get('controllerSpecificProperties').forEach( function (prop) {
+				var val = context.getPropertyValue(prop)
+				context.set(prop, val);
+			});
+		}
 	}.observes('currentPath')
 
 });
