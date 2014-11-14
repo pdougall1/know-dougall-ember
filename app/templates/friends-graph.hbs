@@ -1,12 +1,4 @@
-{{linkedin-login}}
-
 {{outlet}}
-
-{{friends-graph 
-  user=content 
-  connections=content.connectedUsers
-  selectedConnectionChanged='setChosenConnection'
-}}
 
 <div class='friends-graph-sidebar'>
 {{#with connectionBeingViewed}}

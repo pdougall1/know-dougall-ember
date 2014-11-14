@@ -15,6 +15,7 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      FRIENDS_GRAPH_DOMAIN: 'here'
     }
   };
 
@@ -26,6 +27,8 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.APP.FRIENDS_GRAPH_DOMAIN = 'https://localhost:5000';
+    ENV.APP.KNOW_DOUGALL_RAILS_DOMAIN = 'https://localhost:3000'
   }
 
   if (environment === 'test') {
@@ -35,6 +38,8 @@ module.exports = function(environment) {
   if (environment === 'production') {
     ENV.rootURL = '/';
     ENV.locationType = 'hash';
+    ENV.APP.FRIENDS_GRAPH_DOMAIN = 'https://know-dougall-friends-graph.herokuapp.com';
+    ENV.APP.KNOW_DOUGALL_RAILS_DOMAIN = 'https://know-dougall-rails.herokuapp.com'
   }
 
   return ENV;
