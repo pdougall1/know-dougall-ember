@@ -1,16 +1,17 @@
 import Ember from 'ember';
+import config from './config/environment';
 
 var Router = Ember.Router.extend({
-  location: KnowDougallENV.locationType
+  location: config.locationType
 });
 
 Router.map(function() {
   this.resource("home", { path: '/'} );
   this.resource('posts', function() {
-  	this.route('index');
-  	this.route('new');
-  	this.route('show', { path: '/:post_id' });
-  	this.route('edit', { path: '/:post_id/edit' });
+    this.route('index');
+    this.route('new');
+    this.route('show', { path: '/:post_id' });
+    this.route('edit', { path: '/:post_id/edit' });
   });
   this.resource('me', function() {
     this.route('resume');
