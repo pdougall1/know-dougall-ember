@@ -1,1 +1,13 @@
 {{partial 'posts/post-form'}}
+<div class='posts-right-sidebar'>
+{{newAnnotation}}
+	{{new-annotation 
+		annotation=newAnnotation 
+		action="submitAnnotation"
+	}}
+	<ul>
+		{{#each annotation in annotations}}
+			<li>{{show-annotation annotation=annotation}}</li>
+		{{/each}}
+	</ul>
+</div>
