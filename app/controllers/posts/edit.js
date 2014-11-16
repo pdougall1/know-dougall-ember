@@ -18,20 +18,18 @@ export default Ember.ObjectController.extend({
 	}.property(),
 
 	newAnnotation: function () {
-		var annotation = this.store.createRecord('annotation');
-		annotation.set('post', this.get('content'))
-		return annotation;
+		return this.store.createRecord('annotation');
 	}.property(),
 
 	resetNewAnnotation: function () {
 		var annotation = this.store.createRecord('annotation');
-		annotation.set('post', this.get('content'))
 		this.set('newAnnotation', annotation);
 	},
 
 	actions: {
 		submitAnnotation: function (annotation) {
 			var _this = this
+			annotation.set('post', this.get('content'))
 			annotation.save().then(function (annotation) {
 				_this.get('annotations').then(function (annotations) {
 					annotations.pushObject(annotation);
