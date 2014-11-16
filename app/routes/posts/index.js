@@ -8,7 +8,7 @@ export default Ember.Route.extend({
 
 	actions: {
 		choosePost: function (post) {
-			this.transitionTo('posts.show', post)
+			this.transitionTo('post.show', post)
 		}
 	}
 

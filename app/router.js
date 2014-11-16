@@ -9,6 +9,8 @@ Router.map(function() {
   this.resource("home", { path: '/'} );
   this.resource('posts', function() {
     this.route('index');
+  });
+  this.resource('post', function() {
     this.route('new');
     this.route('show', { path: '/:post_id' });
     this.route('edit', { path: '/:post_id/edit' });

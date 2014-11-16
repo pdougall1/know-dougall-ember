@@ -18,7 +18,7 @@ export default Ember.Route.extend({
 						annotation.save();
 					})]
 				).then(function () {
-					_this.transitionTo('posts.show', post);
+					_this.transitionTo('post.show', post);
 				});
 			};
 

@@ -13,7 +13,7 @@ export default Ember.ArrayController.extend({
 			},
 			{
 				name: 'New',
-				route: 'posts.new'
+				route: 'post.new'
 			}
 		]
 	}.property()

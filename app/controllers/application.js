@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-	needs: ['friends-graph/show', 'friends-graph/index', 'posts/index', 'posts/show', 'posts/new', 'posts/edit', 'application'],
+	needs: ['friends-graph/show', 'friends-graph/index', 'posts/index', 'post/show', 'post/new', 'post/edit'],
 
 	getPropertyValue: function (propertyName) {
 		var currentPath = this.get('currentPath').replace(".", "/")
