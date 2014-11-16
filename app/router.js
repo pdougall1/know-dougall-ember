@@ -11,9 +11,21 @@ Router.map(function() {
     this.route('index');
   });
   this.resource('post', function() {
-    this.route('new');
-    this.route('show', { path: '/:post_id' });
-    this.route('edit', { path: '/:post_id/edit' });
+    this.resource('post.new', { path: '/new'}, function() {
+      this.resource('annotations', function() {
+        this.route('new');
+      });
+    });
+    this.resource('post.show', { path: '/:post_id'}, function() {
+      this.resource('annotations', function() {
+        this.route('index');
+      });
+    });
+    this.resource('post.edit', { path: '/:post_id/edit'}, function() {
+      this.resource('annotations', function() {
+        this.route('edit');
+      });
+    });
   });
   this.resource('me', function() {
     this.route('resume');
@@ -26,6 +38,7 @@ Router.map(function() {
   });
 
   this.route('application');
+  this.route('annotations/new');
 });
 
 export default Router;
