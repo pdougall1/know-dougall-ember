@@ -8,5 +8,5 @@ export default DS.Model.extend({
 	formattedEntry: DS.attr('string'),
 	summary: DS.attr('string'),
 	viewable: DS.attr('boolean'),
-	annotations: DS.hasMany('annotation')
+	annotations: DS.hasMany('annotation', { async: true })
 });
