@@ -8,9 +8,6 @@ export default Ember.Route.extend({
 		},
 		closeMenu: function () {
 			$('.nav-menu').removeClass('shown');
-		},
-		goToResume: function () {
-			this.transitionTo('resume');
 		}
 	}
 
