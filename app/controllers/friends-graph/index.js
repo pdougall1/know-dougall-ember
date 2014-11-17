@@ -11,6 +11,9 @@ export default Ember.Controller.extend({
 			}, {
 				name: 'Index',
 				route: 'posts.index'
+			}, {
+				name: 'Home',
+				route: 'home'
 			}
 		]
 	}.property(),

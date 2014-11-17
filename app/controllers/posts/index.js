@@ -14,6 +14,9 @@ export default Ember.ArrayController.extend({
 			{
 				name: 'New',
 				route: 'posts.new'
+			}, {
+				name: 'Home',
+				route: 'home'
 			}
 		]
 	}.property()
