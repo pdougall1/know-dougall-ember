@@ -8,7 +8,7 @@ export default Ember.Component.extend({
 		this.get('friendsGraphDomain') + "/sessions/linkedin"
 	}.property(),
 
-	friendsGraphDomain: window.KnowDougallENV.APP.FRIENDS_GRAPH_DOMAIN,
+	friendsGraphDomain: 'https://know-dougall-friends-graph.herokuapp.com',
 
 	click: function () {
 		window.location = this.get('href');

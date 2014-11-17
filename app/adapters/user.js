@@ -1,5 +1,5 @@
 import DS from 'ember-data';
 
 export default DS.ActiveModelAdapter.extend({
-	host: KnowDougall.FRIENDS_GRAPH_DOMAIN
+	host: 'https://know-dougall-friends-graph.herokuapp.com'
 });
