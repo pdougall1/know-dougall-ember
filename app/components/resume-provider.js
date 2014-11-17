@@ -1,13 +1,9 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-	tagName: 'img',
-	attributeBindings: ['src'],
-	src: '/assets/images/resume_icon.svg',
-	classNames: ['resume-provider'],
-
-	click: function () {
-		this.sendAction('chooseResume')
-	}
+	tagName: 'a',
+	attributeBindings: ['href'],
+	href: KnowDougall.KNOW_DOUGALL_RAILS_DOMAIN + '/resume',
+	classNames: ['resume-provider']
 
 });
