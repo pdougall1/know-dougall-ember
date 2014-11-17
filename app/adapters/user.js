@@ -1,5 +1,5 @@
 import DS from 'ember-data';
 
 export default DS.ActiveModelAdapter.extend({
-	host: 'http://localhost:5000'
+	host: KnowDougall.FRIENDS_GRAPH_DOMAIN
 });
