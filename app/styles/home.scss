@@ -1,0 +1,18 @@
+@import 'variables';
+
+h1 {
+	color: $orange;
+	text-align: center;
+	font-size: 70px;
+	margin: 40px;
+}
+
+h3 {
+	color: $orange;
+	font-size: 25px;
+	border-bottom: 1px solid $light-blue;
+}
+
+.posts-container .self-summary p {
+	padding-top: 0;
+}

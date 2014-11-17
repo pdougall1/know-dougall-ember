@@ -97,3 +97,17 @@ $speed: 100ms;
 		left: 0px;
 	}
 }
+
+.resume-provider {
+	width: 175px;
+	height: 200px;
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+
+	background-size: 125% 125%;
+	background-repeat: no-repeat;
+	background-image: url(/assets/images/resume_icon_2.svg);
+}
+
+
