@@ -6,6 +6,14 @@ export default Ember.Route.extend({
 		return this.store.createRecord('post');
 	},
 
+  deactivate: function() {
+  	this.resetAnnimations();
+  },
+
+  resetAnnimations: function() {
+  	this.set('controller.annotations', []);
+  },
+
 	actions: {
 		submitPost: function (post) {
 			var _this = this;
