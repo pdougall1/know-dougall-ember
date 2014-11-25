@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
 	needs: ['game-of-life', 'home/summary', 'friends-graph/show', 
 	        'friends-graph/index', 'posts/index', 'posts/show', 
-	        'posts/new', 'posts/edit', 'application', 'home/summary',
+	        'posts/new', 'posts/edit', 'application', 'home', 'home/summary',
 	        'home/personal-projects'
 	       ],
 
