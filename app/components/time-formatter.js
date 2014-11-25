@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+	classNames: ['time-formatter'],	
 
 	formattedTime: function () {
 		var time = this.get('time')

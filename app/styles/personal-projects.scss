@@ -1,0 +1,89 @@
+@import 'variables';
+
+.work-history {
+	ul {
+		margin-left: 0;
+	}
+	p {
+		padding-top: 0;
+	}
+	h1.main-title {
+		color: $orange;
+		margin-top: 30px;
+		font-size: 45px;
+		float: left;
+		margin: 0;
+	}
+	.time-formatter {
+		font-size: 14px;
+		color: gray;
+		float: right;
+	}
+
+	.section {
+		margin-top: 30px;
+		li {
+			color: $dark;
+			font-size: 16px;
+			clear: both;
+			background: $very-light-gray;
+			padding: 10px;
+			width: 100%;
+			font-weight: bold;
+			&:hover {
+				background: $light-gray;
+			}
+			a {
+				color: $light-blue;
+			}
+		}
+		.topic {
+			font-size: 20px;
+		}
+		.left {
+			width: 25%;
+			text-align: right;
+			li {
+				float: right;
+			}
+			.topic {
+				float: right;
+			}
+		}
+		.right {
+			width: 75%;
+			border-left: solid 2px $light-gray;
+			color: $dark;
+		}
+	}
+	.left {
+		width: 45%;
+		float: left;
+		padding-right: 3%;
+		// font-size: 16px;
+	}
+	.right {
+		width: 45%;
+		float: right;
+		padding-left: 4%;
+	}
+	.date {
+		text-align: right;
+		margin-right: 20px;
+	}
+	.entry {
+		margin-top: 50px;
+	}
+}
+
+.clear {
+    clear: both;
+    height: 3px;
+    width: 100%;
+    color: black;
+}
+
+.top-title {
+	font-weight: bold;
+	font-size: 15px;
+}

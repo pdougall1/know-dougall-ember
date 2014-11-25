@@ -1,7 +1,7 @@
 @import 'variables';
 
 .friends-graph{
-	background: $black;
+	// background: $black;
     position:absolute;
     top:0;
     bottom:0;
@@ -18,7 +18,7 @@
     left: 80%;
     right: 0;
 	width: 20%;
-	background-color: $black;
+	// background-color: $black;
 	color: $gray;
 	overflow:hidden;
 	img {

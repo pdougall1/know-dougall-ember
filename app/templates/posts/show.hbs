@@ -1,6 +1,21 @@
-<h1 class='post title'>{{title}}</h1>
-{{time-formatter time=createdAt}}
-<div class='entry'>{{{formattedEntry}}}</div>
+<div class='work-history'>
+	<h1 class='main-title'>{{title}}</h1>
+	{{time-formatter time=createdAt}}
+	<div class='clear'></div>
+    <div class='clear'></div>
+    <div class='section'>
+      <div class='left'>
+        <ul>
+
+        </ul>
+      </div>
+      <div class='right'>
+				{{{summary}}}
+      </div>
+    </div>
+    <div class='clear'></div>
+    <div class='entry'>{{{formattedEntry}}}</div>
+</div>
 
 <div class='posts-right-sidebar'>
 {{{currentAnnotation.formattedEntry}}}

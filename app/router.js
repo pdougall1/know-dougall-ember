@@ -6,7 +6,13 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.resource("home", { path: '/'} );
+  this.resource("home", { path: '/'}, function () {
+    this.route('summary');
+    this.route('interests');
+    this.route('personal-projects');
+    this.route('code');
+  });
+  this.resource("game-of-life");
   this.resource('posts', function() {
     this.route('index');
     this.route('new');
