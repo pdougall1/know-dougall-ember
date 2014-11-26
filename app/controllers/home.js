@@ -6,10 +6,6 @@ export default Ember.ObjectController.extend({
 			{
 				name: 'Friends Graph',
 				route: 'friends-graph.index'
-			},
-			{
-				name: 'New',
-				route: 'posts.new'
 			}, {
 				name: 'Index',
 				route: 'posts.index'

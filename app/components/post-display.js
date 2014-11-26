@@ -10,10 +10,8 @@ export default Ember.Component.extend({
 
 	actions: {
 		showPostDetails: function () {
-			console.log('dougs');
 		},
 		hidePostDetails: function () {
-			console.log('other dougs');
 		}
 	}
 });

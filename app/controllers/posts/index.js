@@ -10,10 +10,6 @@ export default Ember.ArrayController.extend({
 			{
 				name: 'Friends Graph',
 				route: 'friends-graph.index'
-			},
-			{
-				name: 'New',
-				route: 'posts.new'
 			}, {
 				name: 'Home',
 				route: 'home'
