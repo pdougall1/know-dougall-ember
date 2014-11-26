@@ -28,7 +28,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     ENV.APP.LOG_VIEW_LOOKUPS = true;
     ENV.APP.FRIENDS_GRAPH_DOMAIN = 'https://localhost:5000';
-    ENV.APP.KNOW_DOUGALL_RAILS_DOMAIN = 'https://localhost:3000'
+    ENV.APP.KNOW_DOUGALL_RAILS_DOMAIN = 'https://localhost:3000';
   }
 
   if (environment === 'test') {
