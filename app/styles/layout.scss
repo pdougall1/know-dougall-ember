@@ -39,10 +39,11 @@
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	background-image: url(/assets/images/linkedin-logo.png);
-	&.in-corner {
-		position: fixed;
-		top: 28px;
-		left: 52px;
-		z-index: 20;
-	}
+}
+
+.in-corner .linkedin-login {
+	position: fixed;
+	top: 28px;
+	left: 52px;
+	z-index: 20;
 }
